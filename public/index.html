@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <title>Title natin</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                
+            </h1>
+            <p id="description">
+                ano bang magandang description? 
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Discord Username</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your username" required>
+            </div>
+            <!-- end of text section -->
+
+            
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">1</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >1</option>
+                    <option value="student">2</option>
+                    <option value="teacher">3</option>
+                    <option value="job">4</option>
+                    <option value="other">5</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+
+            <!-- radio button section -->
+            <div class="form-group">
+                <p id="quest">tanong yern</p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    checked> Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    > 1
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="social-media"
+                    class="inputRadio"
+                    > 2
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="newspaper"
+                    class="inputRadio"
+                    > 3
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="other"
+                    class="inputRadio"
+                    > 4
+                </label>
+            </div>
+            <!-- end of radio button -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest">Would you like to see improved ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> 1
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> 2
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  3
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> 4
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </div>
+            <!-- End of checkbox section -->
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest">Give us your feedback</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
